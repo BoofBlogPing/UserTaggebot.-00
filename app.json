@@ -11,6 +11,21 @@
       "description": " my.telegram.org Vasitəsi ilə Ala Bilərsən",
       "value": ""
     },
+     "OWNER_ID": {
+      "description": "The user id(s) of user(s) whom you would like to add as a OWNER. Multiple values shall be seperated with a space.",
+      "value": "",
+      "required": true
+    },
+      "SUPPORT_CHANNEL": {
+      "description": "Support kanal linki. Bu linkle olmalıdı  https://t.me/",
+      "value": "",
+      "required": false
+    },
+   "SUPPORT_GROUP": {
+      "description": "Söhbət qrup linki. Bu linkle olmalıdı  https://t.me/",
+      "value": "",
+      "required": false
+    },
     "API_HASH": {
       "description": "my.telegram.org Vasitəsi ilə Ala Bilərsən",
       "value": ""
