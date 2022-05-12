@@ -28,9 +28,9 @@ async def start(event):
                     buttons=(
                    
 		      [Button.url('Məni Qrupa Sal ➕', 'https://t.me/LoisTagBot?startgroup=a')],
-                      [Button.url('Support 🛠', '')],
-                      [Button.url('Reklam Üçün 📣', '')],
-		      [Button.url('Developer 👨🏻‍💻', '')],
+                      [Button.url('Qurup 🛠', 'https://t.me/DejavuGurup')],
+                      [Button.url('Kanal 📣', 'https://t.me/DejavuSupport')],
+		      [Button.url('Sahib 👨🏻‍💻', 'https://t.me/ThrHassan')],
                     ),
                     link_preview=False
                    )
@@ -40,9 +40,9 @@ async def help(event):
   await event.reply(helptext,
                     buttons=(
                       [Button.url('Məni Qrupa Sal ➕', 'https://t.me/LoisTagBot?startgroup=a')],
-                      [Button.url('Support 👨‍💻', '')],
-                      [Button.url('Reklam Üçün 💸', '')],
-		      [Button.url('Developer 🧑‍🔧', '')],
+                      [Button.url('Qurup 🛠', 'https://t.me/DejavuGurup')],
+                      [Button.url('Kanal 📣', 'https://t.me/DejavuSupport')],
+		      [Button.url('Sahib 👨🏻‍💻', 'https://t.me/ThrHassan')],
                     ),
                     link_preview=False
                    )
