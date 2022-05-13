@@ -14,7 +14,9 @@ api_id = int(os.environ.get("APP_ID"))
 api_hash = os.environ.get("API_HASH")
 bot_token = os.environ.get("TOKEN")
 client = TelegramClient('client', api_id, api_hash).start(bot_token=bot_token)
-
+updates_channel = os.environ.get("UPDATES_CHANNEL")
+support_group = os.environ.get("SUPPORT_GROUP")
+owner_id = os.environ.get("OWNER_ID")
 
 anlik_calisan = []
 
@@ -28,9 +30,9 @@ async def start(event):
                     buttons=(
                    
 		      [Button.url('Məni Qrupa Sal ➕', 'https://t.me/LoisTagBot?startgroup=a')],
-                      [Button.url('Qurup 🛠', 'https://t.me/DejavuGurup')],
-                      [Button.url('Kanal 📣', 'https://t.me/DejavuSupport')],
-		      [Button.url('Sahib 👨🏻‍💻', 'https://t.me/ThrHassan')],
+                      [Button.url('Qurup 🛠', 'support_group')],
+                      [Button.url('Kanal 📣', 'updates_channel')],
+		      [Button.url('Sahib 👨🏻‍💻', 'owner_id')],
                     ),
                     link_preview=False
                    )
@@ -40,9 +42,9 @@ async def help(event):
   await event.reply(helptext,
                     buttons=(
                       [Button.url('Məni Qrupa Sal ➕', 'https://t.me/LoisTagBot?startgroup=a')],
-                      [Button.url('Qurup 🛠', 'https://t.me/DejavuGurup')],
-                      [Button.url('Kanal 📣', 'https://t.me/DejavuSupport')],
-		      [Button.url('Sahib 👨🏻‍💻', 'https://t.me/ThrHassan')],
+                      [Button.url('Qurup 🛠', 'support_group')],
+                      [Button.url('Kanal 📣', 'updates_channel')],
+		      [Button.url('Sahib 👨🏻‍💻', 'owner_id')],
                     ),
                     link_preview=False
                    )
