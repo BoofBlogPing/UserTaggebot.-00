@@ -30,9 +30,9 @@ async def start(event):
                     buttons=(
                    
 		      [Button.url('Məni Qrupa Sal ➕', 'https://t.me/LoisTagBot?startgroup=a')],
-                      [Button.url('Qurup 🛠', 'SUPPORT_GROUP')],
-                      [Button.url('Kanal 📣', 'UPDATES_CHANNEL')],
-		      [Button.url('Sahib 👨🏻‍💻', 'OWNER_ID')],
+                      [Button.url('Qurup 🛠', 'support_group')],
+                      [Button.url('Kanal 📣', 'updates_channel')],
+		      [Button.url('Sahib 👨🏻‍💻', 'owner_id')],
                     ),
                     link_preview=False
                    )
@@ -42,9 +42,9 @@ async def help(event):
   await event.reply(helptext,
                     buttons=(
                       [Button.url('Məni Qrupa Sal ➕', 'https://t.me/LoisTagBot?startgroup=a')],
-                      [Button.url('Qurup 🛠', 'SUPPORT_GROUP')],
-                      [Button.url('Kanal 📣', 'UPDATES_CHANNEL')],
-		      [Button.url('Sahib 👨🏻‍💻', 'OWNER_ID')],
+                      [Button.url('Qurup 🛠', 'support_group')],
+                      [Button.url('Kanal 📣', 'updates_channel')],
+		      [Button.url('Sahib 👨🏻‍💻', 'owner_id')],
                     ),
                     link_preview=False
                    )
