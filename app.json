@@ -7,6 +7,21 @@
       "description": "@botfather Vasitəsi ilə Ala Bilərsən",
       "value": ""
     },
+     "OWNER_ID": {
+      "description": "Your Id",
+      "value": "",
+      "required": true
+    },
+      "UPDATES_CHANNEL": {
+      "description": "Updates Channel without @ [Leave this if you don't have one].",
+      "required": true
+      "value": ""
+    }, 
+      "SUPPORT_GROUP": {
+      "description": "Your MusicPlayer support group without @ [Leave this if you don't have one]",
+      "required": true
+      "value": ""
+    },   
     "APP_ID": {
       "description": " my.telegram.org Vasitəsi ilə Ala Bilərsən",
       "value": ""
