@@ -13,6 +13,7 @@ LOGGER = logging.getLogger(__name__)
 api_id = int(os.environ.get("APP_ID"))
 api_hash = os.environ.get("API_HASH")
 bot_token = os.environ.get("TOKEN")
+client = TelegramClient('client', api_id, api_hash).start(bot_token=bot_token)
 updates_channel = os.environ.get("UPDATES_CHANNEL")
 support_group = os.environ.get("SUPPORT_GROUP")
 owner_id = os.environ.get("OWNER_ID")
@@ -29,9 +30,9 @@ async def start(event):
                     buttons=(
                    
 		      [Button.url('Məni Qrupa Sal ➕', 'https://t.me/LoisTagBot?startgroup=a')],
-                      [Button.url('Qurup 🛠', 'support_group')],
-                      [Button.url('Kanal 📣', 'updates_channel')],
-		      [Button.url('Sahib 👨🏻‍💻', 'owner_id')],
+                      [Button.url('Qurup 🛠', 'SUPPORT_GROUP')],
+                      [Button.url('Kanal 📣', 'UPDATES_CHANNEL')],
+		      [Button.url('Sahib 👨🏻‍💻', 'OWNER_ID')],
                     ),
                     link_preview=False
                    )
@@ -41,9 +42,9 @@ async def help(event):
   await event.reply(helptext,
                     buttons=(
                       [Button.url('Məni Qrupa Sal ➕', 'https://t.me/LoisTagBot?startgroup=a')],
-                      [Button.url('Qurup 🛠', 'support_group')],
-                      [Button.url('Kanal 📣', 'updates_channel')],
-		      [Button.url('Sahib 👨🏻‍💻', 'owner_id')],
+                      [Button.url('Qurup 🛠', 'SUPPORT_GROUP')],
+                      [Button.url('Kanal 📣', 'UPDATES_CHANNEL')],
+		      [Button.url('Sahib 👨🏻‍💻', 'OWNER_ID')],
                     ),
                     link_preview=False
                    )
