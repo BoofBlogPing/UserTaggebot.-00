@@ -49,15 +49,9 @@ async def help(event):
 @client.on(events.NewMessage(pattern="^/reklam$"))
 async def help(event):
   helptext = "**Çox Funksiyalı Tag Botunu Tapmağa Çalışan Qrup Sahibləri üçün @DejavuTaggerBot. 
-                      [Button.url('➕ Məni Qrupa Sal ➕', 'http://t.me/DejavuTaggerBot?startgroup=a')],
-                      [Button.url('Sahib 👨🏻‍💻', 'https://t.me/MUCVE_M')],
-                      [Button.url('Qurup 📣', 'https://t.me/DejavuGurup')],
-		      [Button.url('Kanal 🛠', 'https://t.me/DejavuSupport')],
-
-                    ), Sizin üçündür:\n\n📌 Beş'li Tag Eləmə Əmri.\n📌 Emojilərlə Tag Eləmə Əmri.\n📌 Tək-Tək Tag Eləmə Əmri.\n📌 Adminləri Tag Eləmə Əmri.\n\n Belə bir çox Funksiyalı @DejavuTaggerBot-u admin olaraq qrupunuza əlavə edə və asanlıqla qoşula, userleri tag edə bilərsiniz. **"
-  await event.reply(helptext,
+   await event.reply(helptext,  
                     buttons=(
-                      [Button.url('➕ Məni Qrupa Sal ➕', 'http://t.me/DejavuTaggerBot?startgroup=a')],
+                  [Button.url('➕ Məni Qrupa Sal ➕', 'http://t.me/DejavuTaggerBot?startgroup=a')],
                     ),
                     link_preview=False
                    )
