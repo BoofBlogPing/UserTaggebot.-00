@@ -13,10 +13,7 @@ LOGGER = logging.getLogger(__name__)
 api_id = int(os.environ.get("APP_ID"))
 api_hash = os.environ.get("API_HASH")
 bot_token = os.environ.get("TOKEN")
-updates_channel = os.environ.get("UPDATES_CHANNEL")
-support_group = os.environ.get("SUPPORT_GROUP")
-owner_id = os.environ.get("OWNER_ID")
-client = TelegramClient('client', api_id, api_hash, updates_channel, support_group, owner_id).start(bot_token=bot_token)
+client = TelegramClient('client', api_id, api_hash).start(bot_token=bot_token)
 
 anlik_calisan = []
 
