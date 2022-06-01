@@ -33,7 +33,7 @@ async def start(event):
                     ),
                     link_preview=False
                    )
-@client.on(events.NewMessage(pattern="^/help$"))
+###@client.on(events.NewMessage(pattern="^/help$"))
 async def help(event):
   helptext = "** DejavuTagBot'un Kömək Menyusu.**\n\nƏmrlər:\n/add <Mesajınız> = Beş'li Tag Eləmə Əmri. \n/tektag <Mesajınız> = Tək-Tək Tag Eləmə Əmri. \n/etag <Mesajınız> = Emojilərlə Tag Eləmə Əmri.\n/admins <Mesajınız> = Adminləri Tag Eləmə Əmri."
   await event.reply(helptext,
@@ -46,7 +46,7 @@ async def help(event):
                     link_preview=False
                    )
 	
-@client.on(events.NewMessage(pattern="^/reklam$"))
+###@client.on(events.NewMessage(pattern="^/reklam$"))
 async def help(event):
   helptext = "**Çox Funksiyalı Tag Botunu Tapmağa Çalışan Qrup Sahibləri üçün @DejavuTaggerBot Sizin üçündür:\n\n📌 Beş'li Tag Eləmə Əmri.\n📌 Tək-Tək Tag Eləmə Əmri.\n📌 Emojilərlə Tag Eləmə Əmri.\n📌 Adminləri Tag Eləmə Əmri.\n📌\n\n Belə bir çox Funksiyalı @DejavuTaggerBot-u Admin Olaraq Qrupunuza Əlavə edə və Asanlıqla Qoşula, Userleri Tag Edə Bilərsiniz. **" 
    await event.reply(helptext,  
