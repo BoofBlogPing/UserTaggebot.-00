@@ -31,7 +31,7 @@ async def start(event):
                       [Button.url('Sahibə 👩‍💻', 'https://t.me/Tibb_bacisi')],
                       [Button.url('Qurup 📣', 'https://t.me/sohbet_mekani_KM')],
 		      [Button.url('Kanal 🛠', 'https://t.me/kohne_mekan_kanal')],
-                      [Button.url('➕ K.M Music Bot'u Qrupa Sal ➕', 'http://t.me/KohneMekanMusicBot?startgroup=a')],
+                      [Button.url('K.M Music Bot', 'http://t.me/KohneMekanMusicBot')],
                     ),
                     link_preview=False
                    )
@@ -45,7 +45,7 @@ async def help(event):
                       [Button.url('Sahibə ', 'https://t.me/Tibb_bacisi')],
                       [Button.url('Qurup 📣', 'https://t.me/sohbet_mekani_KM')],
 		      [Button.url('Kanal 🛠', 'https://t.me/kohne_mekan_kanal')],
-                      [Button.url('➕ K.M Music Bot'u Qrupa Sal ➕', 'http://t.me/KohneMekanMusicBot?startgroup=a')],     
+                      [Button.url('K.M Music Bot', 'http://t.me/KohneMekanMusicBot')],     
                     ),
                     link_preview=False
                    )
